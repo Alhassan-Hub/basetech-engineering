@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+@theme {
+  /* Brand Colors */
+  --color-primary: #0F172A;   /* Deep Navy */
+  --color-secondary: #1E293B; /* Slate Navy */
+  --color-accent: #2563EB;    /* Engineering Blue */
+  --color-safety: #F59E0B;    /* Construction Gold */
+
+  /* Modern Fonts */
+  --font-sans: "Inter", ui-sans-serif, system-ui;
+  --font-display: "Lexend", sans-serif;
+}
+
+@layer base {
+  html {
+    @apply scroll-smooth overflow-x-hidden;
+    /* This removes the 300ms tap delay on mobile */
+    touch-action: manipulation; 
+  }
+  
+  body {
+    @apply bg-white text-primary antialiased overflow-x-hidden m-0 p-0;
+  }
+}
